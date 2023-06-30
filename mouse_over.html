@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse_Over</title>
+
+</head>
+<body style="background-color: aquamarine;">
+    <div onmouseover="mouse_over(this)"
+         onmouseout="mouse_out(this)"
+         style="background-color: white; width: 120px; height: 80px; padding: 10px;"
+         >
+        Hover me
+    </div>
+    <script>
+        function mouse_over(a){
+            a.style.backgroundColor = "red";
+            a.innerHTML = "Hover Off";
+            a.style.color = "yellow";
+        }
+        function mouse_out(a){
+            a.style.backgroundColor = "white";
+            a.innerHTML = "Hover me";  
+            a.style.color = "red";
+        }
+    </script>
+</body>
+</html>

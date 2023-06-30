@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Changing</title>
+</head>
+<body>
+    <div>
+        <p>If you click the below text it would change without using any function.</p>
+        <p onclick="this.innerHTML = 'Hii, There.'">Click me.</p>
+
+        <p>With Function</p>
+        <p id="Ch" onclick="change(this)">I am Gonna Chnage because of the function called when tou click me.</p>
+    </div>
+    <script>
+        function change(text){
+            text.innerHTML = "Hii, There. ";
+        }
+    </script>
+</body>
+</html>
